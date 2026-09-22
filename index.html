@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kilaza Health Bridge</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: .25rem; }
+  nav a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<h1>Kilaza Health Bridge</h1>
+<p class="sub">A private, single-user personal utility.</p>
+<p>
+  Kilaza Health Bridge reads the owner's own daily step total from the
+  Google Health API (<code>dailyRollUp</code>, all sources) and records it in the
+  owner's private Kilaza health ledger. It is used by one person, on one
+  personal computer, for personal fitness tracking.
+</p>
+<p>
+  The app requests a single read-only scope:
+  <code>googlehealth.activity_and_fitness.readonly</code>. It never writes to
+  Google Health and never shares data with anyone.
+</p>
+<nav>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="terms.html">Terms of service</a>
+</nav>
+</body>
+</html>
